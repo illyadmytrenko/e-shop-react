@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.slick-track {
+  display: flex !important;
+  gap: 20px;
+  padding: 20px 0;
+}
