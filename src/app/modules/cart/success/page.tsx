@@ -1,3 +1,5 @@
+"use client";
+
 import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { useAppDispatch, useAppSelector } from "@/common/shared/redux";
@@ -9,7 +11,7 @@ import { productsSlice } from "../../products/products.slice";
 import { CustomButton } from "@/common/components/custom-button/custom-button";
 import { CustomImage } from "@/common/components/custom-image/custom-image";
 
-export function CartSuccess() {
+export default function CartSuccess() {
   const navigate = useNavigate();
   const dispatch = useAppDispatch();
 

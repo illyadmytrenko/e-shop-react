@@ -1,3 +1,5 @@
+"use client";
+
 import { useNavigate, useParams } from "react-router-dom";
 import { useModal } from "@/common/context/modal-context";
 import { useAppDispatch, useAppSelector } from "@/common/shared/redux";
@@ -18,7 +20,7 @@ import { addProductToCart } from "../products.slice";
 import { ProductInfoLayout } from "./ui/product-info-layout";
 import clsx from "clsx";
 
-export function ProductInfo() {
+export default function ProductInfo() {
   const { id = "" } = useParams<{ id: string }>();
   const navigate = useNavigate();
 

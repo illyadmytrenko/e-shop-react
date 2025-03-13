@@ -1,7 +1,9 @@
+"use client";
+
 import { CustomBreadcrumb } from "@/common/components/custom-breadcrumb/custom-breadcrumb";
 import { Link } from "react-router-dom";
 
-export function TermsAndConditions() {
+export default function TermsAndConditions() {
   return (
     <>
       <CustomBreadcrumb name="Terms & Conditions" className="mb-12" />

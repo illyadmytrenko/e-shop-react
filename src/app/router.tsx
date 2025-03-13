@@ -8,10 +8,10 @@ import {
 import { Header } from "./components/header/header";
 import { Footer } from "./components/footer/footer";
 import Home from "./app";
-import Products from "./modules/products/products";
-import FAQ from "./modules/faqs/faqs";
-import ContactUs from "./modules/contact-us/contact-us";
-import AboutUs from "./modules/about-us/about-us";
+import Products from "./modules/products/page";
+import FAQ from "./modules/faqs/page";
+import ContactUs from "./modules/contact-us/page";
+import AboutUs from "./modules/about-us/page";
 import { store } from "./store";
 import { userApi } from "./modules/users/api";
 import { setRouter } from "@/common/shared/extra-argument";
@@ -19,13 +19,13 @@ import {
   productsApi,
   productsCharacteristicsApi,
 } from "./modules/products/api";
-import { ProductInfo } from "./modules/products/product/product-info";
-import { TermsAndConditions } from "./modules/terms-conditions/terms-conditions";
-import { Account } from "./modules/account/account";
-import { Cart } from "./modules/cart/cart";
+import ProductInfo from "./modules/products/product/page";
+import TermsAndConditions from "./modules/terms-conditions/page";
+import Account from "./modules/account/page";
+import Cart from "./modules/cart/page";
 import { userInfoSlice } from "./modules/users/user-info.slice";
-import { CartError } from "./modules/cart/error/cart-error";
-import { CartSuccess } from "./modules/cart/success/cart-success";
+import CartError from "./modules/cart/error/page";
+import CartSuccess from "./modules/cart/success/page";
 import { useModal } from "@/common/context/modal-context";
 import clsx from "clsx";
 import { useEffect } from "react";

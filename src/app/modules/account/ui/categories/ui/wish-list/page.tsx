@@ -1,3 +1,5 @@
+"use client";
+
 import { useAppSelector } from "@/common/shared/redux";
 import { productsSlice } from "@/app/modules/products/products.slice";
 import { productsApi } from "@/app/modules/products/api";
@@ -5,11 +7,11 @@ import { CategoryTop } from "../category-top";
 import { ProductCard } from "@/common/components/product-card/product-card";
 import { NoItemsSample } from "@/common/components/no-items-sample/no-items-sample";
 
-interface WishListProps {
+interface PageProps {
   userId: number;
 }
 
-export function WishList({ userId }: WishListProps) {
+export default function WishList({ userId }: PageProps) {
   const products = productsApi.useGetProductsQuery().data ?? [];
 
   const likedProductsList = useAppSelector((state) =>

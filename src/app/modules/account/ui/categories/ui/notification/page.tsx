@@ -1,3 +1,5 @@
+"use client";
+
 import { UserInfo } from "@/common/types/user-info";
 import { useState, useEffect } from "react";
 import { useAppDispatch } from "@/common/shared/redux";
@@ -5,7 +7,7 @@ import { CategoryTop } from "../category-top";
 import { NotificationSwitch } from "./ui/notification-switch";
 import { setUserInfo } from "@/app/modules/users/user-info.slice";
 
-interface NotificationProps {
+interface PageProps {
   userInfo: UserInfo | null;
 }
 
@@ -36,7 +38,7 @@ const notifications = [
   },
 ];
 
-export function Notification({ userInfo }: NotificationProps) {
+export default function Notification({ userInfo }: PageProps) {
   const [userSwitch, setUserSwitch] = useState<boolean[]>(Array(4).fill(false));
 
   const dispatch = useAppDispatch();

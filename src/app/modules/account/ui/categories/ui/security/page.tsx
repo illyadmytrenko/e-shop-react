@@ -1,8 +1,10 @@
+"use client";
+
 import { UserInfo } from "@/common/types/user-info";
 import { AccountInput } from "@/common/components/account-input/account-input";
 import { CategoryTop } from "../category-top";
 
-interface SecurityAccessProps {
+interface PageProps {
   userInfo: UserInfo | null;
   handleInputClick: (
     h5: string,
@@ -13,10 +15,10 @@ interface SecurityAccessProps {
   ) => void;
 }
 
-export function SecurityAccess({
+export default function SecurityAccess({
   userInfo,
   handleInputClick,
-}: SecurityAccessProps) {
+}: PageProps) {
   const inputs = [
     {
       label: "Change your password",

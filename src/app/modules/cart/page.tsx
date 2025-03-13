@@ -1,3 +1,5 @@
+"use client"
+
 import { useNavigate } from "react-router-dom";
 import { useAppDispatch, useAppSelector } from "@/common/shared/redux";
 import { useModal } from "@/common/context/modal-context";
@@ -15,7 +17,7 @@ import { useValidation } from "@/common/functions/useValidate";
 import { CartLayout } from "./ui/cart-layout";
 import { ModalWindow } from "@/common/components/modal-window/modal-window";
 
-export function Cart() {
+export default function Cart() {
   const navigate = useNavigate();
   const dispatch = useAppDispatch();
   const {

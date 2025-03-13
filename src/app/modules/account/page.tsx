@@ -1,3 +1,5 @@
+"use client";
+
 import { useLocation, useNavigate } from "react-router-dom";
 import { useAppDispatch, useAppSelector } from "@/common/shared/redux";
 import { useModal } from "@/common/context/modal-context";
@@ -16,13 +18,13 @@ import {
   userInfoSlice,
 } from "../users/user-info.slice";
 import { Routes, Route } from "react-router-dom";
-import { Notification } from "./ui/categories/ui/notification/notification";
-import { PersonalData } from "./ui/categories/ui/personal-data/personal-data";
-import { SecurityAccess } from "./ui/categories/ui/security/security-access";
-import { WishList } from "./ui/categories/ui/wish-list/wish-list";
-import { Orders } from "../account/ui/categories/ui/orders/orders";
+import Notification from "./ui/categories/ui/notification/page";
+import PersonalData from "./ui/categories/ui/personal-data/page";
+import SecurityAccess from "./ui/categories/ui/security/page";
+import WishList from "./ui/categories/ui/wish-list/page";
+import Orders from "./ui/categories/ui/orders/page";
 
-export function Account() {
+export default function Account() {
   const location = useLocation();
   const navigate = useNavigate();
   const dispatch = useAppDispatch();

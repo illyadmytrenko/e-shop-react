@@ -1,9 +1,11 @@
+"use client";
+
 import { UserInfo } from "@/common/types/user-info";
 import { parseAddress } from "@/common/functions/address";
 import { CategoryTop } from "../category-top";
 import { AccountInput } from "@/common/components/account-input/account-input";
 
-interface PersonalDataProps {
+interface PageProps {
   userInfo: UserInfo | null;
   handleInputClick: (
     h5: string,
@@ -14,10 +16,10 @@ interface PersonalDataProps {
   ) => void;
 }
 
-export function PersonalData({
+export default function PersonalData({
   userInfo,
   handleInputClick,
-}: PersonalDataProps) {
+}: PageProps) {
   const address = userInfo?.userAddress
     ? parseAddress(userInfo.userAddress)
     : { country: "Country", city: "City", street: "Street" };

@@ -1,9 +1,11 @@
+"use client";
+
 import { useNavigate } from "react-router-dom";
 
 import { CustomButton } from "@/common/components/custom-button/custom-button";
 import { CustomImage } from "@/common/components/custom-image/custom-image";
 
-export function CartError() {
+export default function CartError() {
   const navigate = useNavigate();
   const handleReturn = (): void => {
     navigate("/cart");
