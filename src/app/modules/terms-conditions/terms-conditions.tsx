@@ -4,11 +4,7 @@ import { Link } from "react-router-dom";
 export function TermsAndConditions() {
   return (
     <>
-      <CustomBreadcrumb
-        pageURL="terms-conditions"
-        pageName="Terms & Conditions"
-        className="mb-12"
-      />
+      <CustomBreadcrumb name="Terms & Conditions" className="mb-12" />
       <div className="flex flex-col gap-5 text-lg">
         <div>
           <h1 className="font-bold text-4xl">Terms and Conditions</h1>

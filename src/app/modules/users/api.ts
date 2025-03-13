@@ -9,6 +9,7 @@ const UserDtoSchema = z.object({
   userAddress: z.union([z.string(), z.null()]),
   userPostalCode: z.union([z.string(), z.null()]),
   userPhoneNumber: z.union([z.string(), z.null()]),
+  userNotifications: z.union([z.string(), z.null()]),
 });
 
 export const userApi = baseApi.injectEndpoints({

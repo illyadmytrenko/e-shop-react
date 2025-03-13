@@ -121,9 +121,10 @@ export function ModalWindowAccountRegister({
             userId: data.user.id,
             userName: data.user.name,
             userEmail: data.user.email,
-            userAddress: undefined,
-            userPostalCode: undefined,
-            userPhoneNumber: undefined,
+            userAddress: null,
+            userPostalCode: null,
+            userPhoneNumber: null,
+            userNotifications: null,
           })
         );
 

@@ -65,6 +65,7 @@ const BodyContent = () => {
     setIsModalChangeOpen(false);
   };
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const modalsState = [
     isBurgerMenuOpen,
     isDropdownCartOpen,
@@ -78,7 +79,7 @@ const BodyContent = () => {
     return () => {
       document.body.style.overflow = "";
     };
-  }, modalsState);
+  }, [modalsState]);
 
   return (
     <div className={clsx("relative")}>

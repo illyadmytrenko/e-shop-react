@@ -91,6 +91,7 @@ export function ModalWindowAccountLogin({
             userAddress: data.user.address,
             userPostalCode: data.user.postalCode,
             userPhoneNumber: data.user.phoneNumber,
+            userNotifications: data.user.notifications,
           })
         );
 

@@ -1,7 +1,6 @@
 import { useAppSelector } from "@/common/shared/redux";
 import { productsSlice } from "@/app/modules/products/products.slice";
 import { productsApi } from "@/app/modules/products/api";
-import { useMemo } from "react";
 import { CategoryTop } from "../category-top";
 import { ProductCard } from "@/common/components/product-card/product-card";
 import { NoItemsSample } from "@/common/components/no-items-sample/no-items-sample";

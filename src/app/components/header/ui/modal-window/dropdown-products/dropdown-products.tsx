@@ -38,7 +38,7 @@ export function DropdownProducts({
       setSelectedCategory(category);
       dispatch(setProductsCategory({ category }));
     },
-    [location.pathname, navigate]
+    [dispatch, location.pathname, navigate]
   );
 
   return (

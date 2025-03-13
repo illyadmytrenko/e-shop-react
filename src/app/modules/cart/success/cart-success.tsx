@@ -106,6 +106,7 @@ export function CartSuccess() {
     dispatch,
     chosenProductsIds,
     paymentUserInfoFromStore,
+    chosenProductsCounts,
   ]);
 
   if (!orderData) return <div>Loading...</div>;
