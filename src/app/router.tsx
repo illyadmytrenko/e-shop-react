@@ -74,12 +74,12 @@ const BodyContent = () => {
     isModalChangeOpen,
   ];
 
-  useEffect(() => {
-    document.body.style.overflow = modalsState.some(Boolean) ? "hidden" : "";
-    return () => {
-      document.body.style.overflow = "";
-    };
-  }, [modalsState]);
+  // useEffect(() => {
+  //   document.body.style.overflow = modalsState.some(Boolean) ? "hidden" : "";
+  //   return () => {
+  //     document.body.style.overflow = "";
+  //   };
+  // }, [modalsState]);
 
   return (
     <div className={clsx("relative")}>

@@ -1,16 +1,3 @@
-// /* eslint-disable @next/next/no-page-custom-font */
-// "use client";
-
-// import dynamic from "next/dynamic";
-
-// const DynamicRootLayout = dynamic(() => import("./layout-root"), {
-//   ssr: false,
-// });
-
-// export default function RootLayout() {
-//   return;
-//   <DynamicRootLayout />;
-// }
 "use client";
 
 import Head from "next/head";
@@ -22,7 +9,7 @@ import { store, persistor } from "./store";
 import { ModalProvider } from "@/common/context/modal-context";
 import { PersistGate } from "redux-persist/integration/react";
 
-export default function RootLayout() {
+export default function LayoutRoot() {
   return (
     <html lang="en">
       <Head>
