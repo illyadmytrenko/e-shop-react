@@ -5,7 +5,7 @@ import { AccountInput } from "@/common/components/account-input/account-input";
 import { CategoryTop } from "../category-top";
 
 interface PageProps {
-  userInfo: UserInfo | null;
+  userInfo: UserInfo | never;
   handleInputClick: (
     h5: string,
     inputName: string[],

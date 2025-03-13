@@ -13,7 +13,7 @@ import { NoItemsSample } from "@/common/components/no-items-sample/no-items-samp
 import { productsApi } from "@/app/modules/products/api";
 
 interface PageProps {
-  userId: number;
+  userId: never;
 }
 
 export default function Orders({ userId }: PageProps) {

@@ -10,7 +10,7 @@ import { Footer } from "./components/footer/footer";
 import Home from "./app";
 import Products from "./modules/products/page";
 import FAQ from "./modules/faqs/page";
-import ContactUs from "./modules/contact-us/page";
+import ContactUs from "./modules/contact-us/contact-us";
 import AboutUs from "./modules/about-us/page";
 import { store } from "./store";
 import { userApi } from "./modules/users/api";
