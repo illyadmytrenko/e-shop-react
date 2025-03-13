@@ -30,7 +30,7 @@ export default function RootLayout() {
     setIsClient(true);
   }, []);
 
-  if (!isClient) return <p>Loading...</p>;
+  if (!isClient && typeof document === "undefined") return <p>Loading...</p>;
 
   return (
     <html lang="en">
