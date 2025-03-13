@@ -2,7 +2,6 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: "export",
-  ignoreBuildErrors: true,
   images: {
     unoptimized: true,
     remotePatterns: [
