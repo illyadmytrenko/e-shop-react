@@ -28,7 +28,7 @@ import CartError from "./modules/cart/error/page";
 import CartSuccess from "./modules/cart/success/page";
 import { useModal } from "@/common/context/modal-context";
 import clsx from "clsx";
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import { useAppSelector } from "@/common/shared/redux";
 const loadStore = () =>
   new Promise((resolve) => {
@@ -66,13 +66,13 @@ const BodyContent = () => {
   };
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  const modalsState = [
-    isBurgerMenuOpen,
-    isDropdownCartOpen,
-    isModalSearchOpen,
-    isModalAccountOpen,
-    isModalChangeOpen,
-  ];
+  // const modalsState = [
+  //   isBurgerMenuOpen,
+  //   isDropdownCartOpen,
+  //   isModalSearchOpen,
+  //   isModalAccountOpen,
+  //   isModalChangeOpen,
+  // ];
 
   // useEffect(() => {
   //   document.body.style.overflow = modalsState.some(Boolean) ? "hidden" : "";
