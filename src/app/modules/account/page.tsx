@@ -18,11 +18,11 @@ import {
   userInfoSlice,
 } from "../users/user-info.slice";
 import { Routes, Route } from "react-router-dom";
-import Notification from "./ui/categories/ui/notification/page";
-import PersonalData from "./ui/categories/ui/personal-data/page";
-import SecurityAccess from "./ui/categories/ui/security/page";
-import WishList from "./ui/categories/ui/wish-list/page";
-import Orders from "./ui/categories/ui/orders/page";
+import { Notification } from "./ui/categories/ui/notification/page";
+import { PersonalData } from "./ui/categories/ui/personal-data/page";
+import { SecurityAccess } from "./ui/categories/ui/security/page";
+import { WishList } from "./ui/categories/ui/wish-list/page";
+import { Orders } from "./ui/categories/ui/orders/page";
 
 export default function Account() {
   const location = useLocation();

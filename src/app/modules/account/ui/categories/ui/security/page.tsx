@@ -5,7 +5,7 @@ import { AccountInput } from "@/common/components/account-input/account-input";
 import { CategoryTop } from "../category-top";
 
 interface PageProps {
-  userInfo: UserInfo | never;
+  userInfo: UserInfo | null;
   handleInputClick: (
     h5: string,
     inputName: string[],
@@ -15,7 +15,7 @@ interface PageProps {
   ) => void;
 }
 
-export default function SecurityAccess({
+export function SecurityAccess({
   userInfo,
   handleInputClick,
 }: PageProps) {

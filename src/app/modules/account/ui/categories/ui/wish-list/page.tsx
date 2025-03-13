@@ -11,7 +11,7 @@ interface PageProps {
   userId: number;
 }
 
-export default function WishList({ userId }: PageProps) {
+export function WishList({ userId }: PageProps) {
   const products = productsApi.useGetProductsQuery().data ?? [];
 
   const likedProductsList = useAppSelector((state) =>

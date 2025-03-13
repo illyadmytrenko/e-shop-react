@@ -38,7 +38,7 @@ const notifications = [
   },
 ];
 
-export default function Notification({ userInfo }: PageProps) {
+export function Notification({ userInfo }: PageProps) {
   const [userSwitch, setUserSwitch] = useState<boolean[]>(Array(4).fill(false));
 
   const dispatch = useAppDispatch();

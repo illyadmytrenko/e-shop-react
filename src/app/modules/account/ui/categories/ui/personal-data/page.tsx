@@ -16,7 +16,7 @@ interface PageProps {
   ) => void;
 }
 
-export default function PersonalData({
+export function PersonalData({
   userInfo,
   handleInputClick,
 }: PageProps) {

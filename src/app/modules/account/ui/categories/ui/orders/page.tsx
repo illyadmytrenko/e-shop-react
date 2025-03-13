@@ -13,10 +13,10 @@ import { NoItemsSample } from "@/common/components/no-items-sample/no-items-samp
 import { productsApi } from "@/app/modules/products/api";
 
 interface PageProps {
-  userId: never;
+  userId: number;
 }
 
-export default function Orders({ userId }: PageProps) {
+export function Orders({ userId }: PageProps) {
   const navigate = useNavigate();
   const [chosenCategory, setChosenCategory] = useState("Current");
 
