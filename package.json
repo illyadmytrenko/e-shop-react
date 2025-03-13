@@ -6,7 +6,7 @@
     "dev:client": "next dev",
     "dev:server": "nodemon server.js",
     "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\"",
-    "build": "next build && netlify-next",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
