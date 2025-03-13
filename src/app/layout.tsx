@@ -21,8 +21,17 @@ import { router } from "./router";
 import { store, persistor } from "./store";
 import { ModalProvider } from "@/common/context/modal-context";
 import { PersistGate } from "redux-persist/integration/react";
+import { useEffect, useState } from "react";
 
 export default function RootLayout() {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  if (!isClient) return <p>Loading...</p>;
+
   return (
     <html lang="en">
       <Head>
